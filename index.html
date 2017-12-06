@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Order Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <h1>Order Now!</h1>
+    <form action="thank_you.html" method="post">
+      Name:<input type="text" name="Name" required>
+      <br>
+      Address:<input type="text" name="Address" required>
+      <br>
+      City:<input type="text" name="City" required>
+      State:<input type="text" name="State" required>
+      Zip:<input type="text" name="Zip" required>
+      <br>
+      <t>Size:</t>
+    <select>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+      Quantity:<input type="text" name="Quantity">
+      <br>
+      <t>Card Type:</t>
+      <input type="radio" name="Card_Type">Visa
+      <input type="radio" name="Card_Type">Mastercard
+      <input type="radio" name="Card_Type">Discover
+      <br>
+      Credit Card Number:<input type="text" name="Credit Card Number" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+
+</html>
