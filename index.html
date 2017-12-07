@@ -10,13 +10,20 @@
 
   <body>
     <h1>Order Now!</h1>
-    <form action="thank_you.html">
-      Name: <input type="text" name="Name">
+    <form action="thank_you.html" method="post">
+      <label for="name">Name: </label>
+      <input id="name" type="text" name="Name">
       <br>
-      Address: <input type="text" name="Address">
+
+      <label for="address">Address: </label>
+      <input id="address" type="text" name="Address">
       <br>
-      City: <input type="text" name="City">
-      State: <select name="State">
+
+      <label for="city">City: </label>
+      <input id="city" type="text" name="City">
+
+      <label for="state">State: </label>
+      <select id="state" name="State">
   	<option value="AL">Alabama</option>
   	<option value="AK">Alaska</option>
   	<option value="AZ">Arizona</option>
@@ -69,21 +76,30 @@
   	<option value="WI">Wisconsin</option>
   	<option value="WY">Wyoming</option>
   </select>
-      Zip: <input type="text" name="Zip">
+
+      <label for="zip">Zip: </label>
+      <input id="zip" type="text" name="Zip">
       <br>
-      Size: <select name="Size">
+
+    <label for="size">Size: </label>
+    <select id="size" name="Size">
       <option value="Small">Small</option>
       <option value="Medium">Medium</option>
       <option value="Large">Large</option>
     </select>
-      Quantity:<input type="text" name="Quantity" size="4">
+
+      <label for="quantity">Quantity: </label>
+      <input id="quantity" type="text" name="Quantity" size="4">
       <br>
-      <t>Card Type:</t>
+
+      <t>Card Type: </t>
       <input type="radio" name="Card_Type">Visa
       <input type="radio" name="Card_Type">Mastercard
       <input type="radio" name="Card_Type">Discover
       <br>
-      Credit Card Number: <input type="text" name="Credit Card Number" method="post">
+
+      <label for="card_number">Credit Card Number: </label>
+      <input id="card_number" type="text" name="Credit Card Number">
       <br>
       <input type="submit" value="Submit">
     </form>
